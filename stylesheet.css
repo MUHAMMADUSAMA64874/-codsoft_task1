@@ -1,0 +1,156 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #EFECEC;
+    color: #333;
+}
+
+header {
+    background-color: #0C2D57;
+    color: #fff;
+    text-align: center;
+    padding: 2em 0;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1em;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #FC6736;
+}
+
+.slider {
+    overflow: hidden;
+    position: relative;
+}
+
+.slider img {
+    width: 100%;
+    height: auto;
+}
+
+.slider-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    animation: slideText 5s infinite alternate;
+}
+
+@keyframes slideText {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -50%) translateY(-10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -50%) translateY(10px);
+    }
+}
+
+section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 4em 0;
+    opacity: 0;
+    animation: fadeInUp 2s forwards;
+}
+
+.feature {
+    padding: 40px;
+    animation: fadeInUp 2s forwards;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    padding: 4em 0;
+    opacity: 0;
+    animation: fadeInRight 2s forwards;
+}
+
+.column {
+    flex: -1 0 30%;
+    text-align: center;
+    animation: fadeInRight 2s forwards;
+    padding: 40px;
+}
+
+.about-us {
+    text-align: center;
+    padding: 4em 0;
+    opacity: 0;
+    animation: fadeInUp 2s forwards;
+}
+
+.about-us img {
+    max-width: 100%;
+    height: auto;
+}
+
+.services {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 4em 0;
+    opacity: 0;
+    animation: fadeInLeft 2s forwards;
+}
+
+.service-box {
+    text-align: center;
+    animation: fadeInLeft 2s forwards;
+}
+
+footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 2em 0;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInRight {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInLeft {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
